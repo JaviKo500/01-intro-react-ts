@@ -7,8 +7,9 @@ import './style.css';
 // import './bases/06-obj-destructuring';
 // import './bases/07-array-destructuring';
 // import './bases/08-imports-exports';
-import { getHeroesByOwner } from './bases/08-imports-exports';
-import { Owner } from './data/heroes.data';
+// import { getHeroesByOwner } from './bases/08-imports-exports';
+// import { Owner } from './data/heroes.data';
+import'./bases/09-promises';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <div>
@@ -16,5 +17,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 </div>
 `;
 
-console.log('<--------------- JK Main --------------->');
-console.log(getHeroesByOwner(Owner.Marvel));
+// console.log('<--------------- JK Main --------------->');
+// console.log(getHeroesByOwner(Owner.Marvel));
