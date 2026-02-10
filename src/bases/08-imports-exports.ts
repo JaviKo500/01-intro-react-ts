@@ -1,4 +1,4 @@
-import { type Hero, heroes } from '../data/heroes.data';
+import { type Hero, heroes, Owner } from '../data/heroes.data';
 
 const getHeroById = (id: number): Hero => {
   const hero = heroes.find((hero) => hero.id === id);
@@ -8,8 +8,9 @@ const getHeroById = (id: number): Hero => {
   return hero;
 };
 
+export const getHeroesByOwner = ( owner: Owner ): Hero[] => heroes.filter((hero) => hero.owner === owner);
 
 console.log('<--------------- JK 08-imports-exports --------------->');
 console.log(getHeroById(5));
 console.log(getHeroById(1));
-console.log(getHeroById(100) ?? 'Not found');
+// console.log(getHeroById(100) ?? 'Not found');
